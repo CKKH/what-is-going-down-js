@@ -14,4 +14,10 @@ describe("MessageBoard", () => {
     expect(messageBoard.messageList).toEqual([]);
   });
 
+  it("responds to the method .save(message)", () => {
+    var messageBoard = new MessageBoard();
+    var message = new Message();
+    expect(messageBoard.save(message)).toBeDefined();
+  });
+
 });
