@@ -1,6 +1,8 @@
-describe("Message", function() {
-  // tests for message class
-  it("should have a test", function() {
-    expect(true).toBe(true);
+describe("Message", () => {
+
+  it("instance of Message can be stored as a variable", () => {
+    var message = new Message;
+    expect(message instanceof Message).toBe(true);
   });
+
 });
