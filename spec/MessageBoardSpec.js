@@ -6,7 +6,7 @@ describe("MessageBoard", () => {
   let messageBoard;
   let message;
 
-  beforeEach(function() {
+  beforeEach( () => {
     messageBoard = new MessageBoard();
     message = jasmine.createSpy('message')
   });
@@ -21,6 +21,11 @@ describe("MessageBoard", () => {
 
   it("responds to the method .save(message)", () => {
     expect(messageBoard.save(message)).toBeDefined();
+  });
+
+  it("stores a message in messageList after .dock(message) called", () => {
+    messageBoard.save(message);
+    expect(messageBoard.messageList).toContain(message);
   });
 
 });

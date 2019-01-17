@@ -4,10 +4,10 @@ function MessageBoard() {
   this.messageList = [];
 }
 
-MessageBoard.prototype.messageList = function() {
+MessageBoard.prototype.messageList = () => {
   return this.messageList;
 }
 
-MessageBoard.prototype.save = function(message) {
+MessageBoard.prototype.save = (message) => {
   return message
 }
