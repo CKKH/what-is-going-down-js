@@ -3,3 +3,8 @@
 function Message() {
 
 }
+
+Message.prototype.userInput = function() {
+
+}
+
