@@ -7,3 +7,7 @@ function MessageBoard() {
 MessageBoard.prototype.messageList = function() {
   return this.messageList;
 }
+
+MessageBoard.prototype.save = function(message) {
+  return message
+}
