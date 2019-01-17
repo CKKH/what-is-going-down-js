@@ -8,6 +8,6 @@ MessageBoard.prototype.messageList = () => {
   return this.messageList;
 }
 
-MessageBoard.prototype.save = (message) => {
-  return message
+MessageBoard.prototype.save = function(message) {
+  return this.messageList.push(message);
 }

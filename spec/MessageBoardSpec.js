@@ -23,7 +23,7 @@ describe("MessageBoard", () => {
     expect(messageBoard.save(message)).toBeDefined();
   });
 
-  it("stores a message in messageList after .dock(message) called", () => {
+  it("stores a message in messageList after .save(message) called", () => {
     messageBoard.save(message);
     expect(messageBoard.messageList).toContain(message);
   });
