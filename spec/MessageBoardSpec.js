@@ -1,3 +1,5 @@
+'use strict';
+
 describe("MessageBoard", () => {
 
   it("instance of MessageBoard can be stored as a variable", () => {

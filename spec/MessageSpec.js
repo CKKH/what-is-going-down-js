@@ -1,3 +1,5 @@
+'use strict';
+
 describe("Message", () => {
 
   it("instance of Message can be stored as a variable", () => {
