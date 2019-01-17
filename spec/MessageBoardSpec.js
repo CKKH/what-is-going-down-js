@@ -19,10 +19,6 @@ describe("MessageBoard", () => {
     expect(messageBoard.messageList).toEqual([]);
   });
 
-  it("responds to the method .save(message)", () => {
-    expect(messageBoard.save(message)).toBeDefined();
-  });
-
   it("stores a message in messageList after .save(message) called", () => {
     messageBoard.save(message);
     expect(messageBoard.messageList).toContain(message);
