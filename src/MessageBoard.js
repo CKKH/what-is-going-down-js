@@ -1,9 +1,7 @@
-'use strict';
+'use strict'
 
 function MessageBoard() {
-
 }
 
-MessageBoard.prototype.printMessages = () => {
-
+MessageBoard.prototype.messageList = function() {
 }
