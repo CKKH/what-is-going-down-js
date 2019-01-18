@@ -1,18 +1,14 @@
-'use strict' 
+'use strict'
 
-function init() {
-  let messageBoard = new MessageBoard();
+function postMessage() {
+  let content = new Message(document.getElementById('content').value);
 
-  button.onlick = () => {
-    let userInput = new Message(content.value);
-    messageBoard.save(userInput)
+  let message = content.userInput + " || " + content.timeStamp
 
-    let message = document.createElement('p');
-    message.innerText = `${message.userInput} || ${message.timeStamp}`
-    
-    let div = document.getElementById('one');
-    div.appendChild(message);
-  })
+  let messageToPrint = document.createTextNode(message);
+
+  let newItem = document.createElement('li')
+    newItem.appendChild(messageToPrint)
+    document.getElementById('messageList').appendChild(newItem)
+    console.log(newItem)
 }
-
-document.addEventListener('load', init);
