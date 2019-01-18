@@ -1,18 +1,18 @@
+'use strict' 
+
 function init() {
-    var button = document.getElementById('button')
-    button.addEventListener('click', function() {
-        console.log("the button has been clicked");
+  let messageBoard = new MessageBoard();
 
-        // create a node called text
-        var text = document.createElement('p');
-        text.innerText = "this is my text"
+  button.onlick = () => {
+    let userInput = new Message(content.value);
+    messageBoard.save(userInput)
 
-        // grab the first div from the document
-        var div = document.getElementById('one');
-
-        // add text to that div
-        div.appendChild(text);
-    })
+    let message = document.createElement('p');
+    message.innerText = `${message.userInput} || ${message.timeStamp}`
+    
+    let div = document.getElementById('one');
+    div.appendChild(message);
+  })
 }
 
 document.addEventListener('load', init);

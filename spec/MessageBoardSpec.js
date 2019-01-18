@@ -1,5 +1,4 @@
 /* global describe, it, expect, beforeEach */
-
 'use strict'
 
 describe("MessageBoard", () => {
@@ -15,11 +14,11 @@ describe("MessageBoard", () => {
     expect(messageBoard instanceof MessageBoard).toBe(true);
   });
 
-  it("returns an array when .messageList called", () => {
+  it(".messageList returns an array when called", () => {
     expect(messageBoard.messageList).toEqual([]);
   });
 
-  it("stores a message in messageList after .save(message) called", () => {
+  it(".save(message) stores a message in messageList after called", () => {
     messageBoard.save(message);
     expect(messageBoard.messageList).toContain(message);
   });

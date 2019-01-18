@@ -1,5 +1,4 @@
 /* global describe, it, expect, beforeEach */
-
 'use strict'
 
 describe("Message", () => {
@@ -7,7 +6,7 @@ describe("Message", () => {
   let time;
 
   beforeEach( () => {
-    time = new Date
+    time = new Date;
     message = new Message("Hello, Chris", time);
   });
 
