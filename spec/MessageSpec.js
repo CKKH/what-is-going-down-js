@@ -19,10 +19,6 @@ describe("Message", () => {
     expect(message.userInput).toEqual("Hello, Chris");
   });
 
-  it("should respond to the method .timeStamp", () => {
-    expect(message.timeStamp).toBeDefined();
-  });
-
   it(".timeStamp returns time message was created", () => {
     expect(message.timeStamp).toEqual(time);
   });
