@@ -1,7 +1,8 @@
 'use strict'
 
-function Message(userInput) {
+function Message(userInput, timeStamp = new Date()) {
   this.userInput = userInput || null;
+  this.timeStamp = timeStamp;
 }
 
 Message.prototype.userInput = () => {
@@ -9,4 +10,5 @@ Message.prototype.userInput = () => {
 }
 
 Message.prototype.timeStamp = () => {
+  return this.timeStamp;
 }
